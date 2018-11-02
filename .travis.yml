@@ -7,6 +7,9 @@ before_install:
 - sudo apt-get -qq update
 script:
 - echo "do something"
+branches:
+  except:
+    - master
 deploy:
 - provider: pages
   local_dir: "./"
