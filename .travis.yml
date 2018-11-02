@@ -1,0 +1,24 @@
+sudo: false
+dist: trusty
+env:
+  global:
+  - secure: zXKhZIpIYqEIBgJo49gxX7buLZiMY7aCQay9BNr24lS6DgM5GtMpHfg9mEhPx6gk6xPx0czgaORrRhYRXXtzNWromYPtvrVOFRZr/3dMd08D7H8zjlG/IVPxytU+EFKbHrDaFeYb2clJRGe5X4tVy4XAtSUtTF6GrBhdvju2DSN+ZtraIpcr8S6ESP/QpDGa2tWFhl/l+ALa9qqq92opeZvXsmKsrj41Nlp/hqP38Ln8txiPoUPZwtyEzH7e4t13wJQkMs8OyVYhC+Ojf8Ke3CP6Z3kZAwbtUfHCkcX7fVGpcaoNox5cSvgotpZIqqWdhrV9jObC6FsZis4vrUYSUDCV1uZwI/dW6LWPVn5/UAOUzEWzw8HHKq92CLM57m+1iS+7Xpwto5rehES+vq43N8zclFgAJ95nRObT12mUEHLQGKd6fZ//sZIU5jbsGz5QwSyCYIXvDUn1+O+Lgn9oMqjCuAL3LhyC2LPFfnHHr4Upg3OL6HhHImok+JMJQ1aTU3WBmJzHj6APjehDBbt8xNTF6rhwtv8ulgbLnvLckAb2CNFxb1ZHtpWFdNmNzV11Wbfzv+uvQdThPN/+FzTIYayAsUH/1aoBK0qg3DFYsVJXcMGJ4sdVgTVwCn9bVTsu/8KvWqjhz7+HgK4ujOAZ57WnZovZRTkrlgkjpiW2rTE=
+before_install:
+- sudo apt-get -qq update
+script:
+- echo "do something"
+deploy:
+- provider: pages
+  local_dir: "./"
+  skip_cleanup: true
+  github_token: "$GITHUB_TOKEN"
+  on:
+    branch: production
+  email: cd2bit@gmail.com
+  name: CD2BiT
+  target-branch: mastera
+  fqdn: cd2bit.com
+notifications:
+  email:
+    on_success: never
+    on_failure: always
