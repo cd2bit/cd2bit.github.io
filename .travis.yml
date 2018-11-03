@@ -19,7 +19,7 @@ deploy:
     branch: production
   email: cd2bit@gmail.com
   name: CD2BiT
-  target-branch: mastera
+  target-branch: master
   fqdn: cd2bit.com
 notifications:
   email:
