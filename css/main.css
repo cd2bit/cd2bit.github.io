@@ -1,0 +1,79 @@
+/* typography ---*/
+
+@font-face {
+    font-family: 'Inter-UI-Black';
+    font-style:  normal;
+    font-weight: 900;
+    src: url('../fonts/Inter-UI-Black.woff2') format('woff2');
+    src: url('../fonts/Inter-UI-Black.woff') format('woff');
+  }
+  
+@font-face {
+  font-family: 'Inter-UI-Bold';
+  font-style:  normal;
+  font-weight: 700;
+  src: url('../fonts/Inter-UI-Bold.woff2') format('woff2');
+  src: url('../fonts/Inter-UI-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter-UI-BoldItalic';
+  font-style:  italic;
+  font-weight: 700;
+  src: url('../fonts/Inter-UI-BoldItalic.woff2') format('woff2');
+  src: url('../fonts/Inter-UI-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter-UI-Regular';
+  font-style:  normal;
+  font-weight: 400;
+  src: url('../fonts/Inter-UI-Regular.woff2') format('woff2');
+  src: url('../fonts/Inter-UI-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter-UI-Italic';
+  font-style:  italic;
+  font-weight: 400;
+  src: url('../fonts/Inter-UI-Italic.woff2') format('woff2');
+  src: url('../fonts/Inter-UI-Italic.woff') format('woff');
+}
+
+body, p { font-family: 'Inter-UI-Regular', sans-serif; }
+
+h1, h2, h3 { font-family: 'Inter-UI-Black', sans-serif; }
+
+strong, bold {font-family: 'Inter-UI-Bold', sans-serif;}
+
+italic, em { font-family: 'Inter-UI-Italic', sans-serif; }
+
+small { font-size: 0.5em; color: #fff }
+
+/* custon styles ---*/
+
+.bg-red-orange { background-color: #F75253}
+
+abbr { border-bottom: 1px dashed #ADADAD;
+  cursor: help; }
+
+/* button ---*/
+
+.myButton { background-color: #fff; border:2px solid #044ADA; display:inline-block; cursor:pointer; color:#044ADA; font-size:17px; padding:0.75em 2em; text-decoration:none; }
+
+.myButton:hover { background-color:#044ADA; color: #fff; }
+
+.myButton:active { position:relative; top:1px; }
+
+/* custon hyperlinks ---*/
+
+.jb-web { text-decoration: none; border-bottom: 2px solid #444;}
+
+.gs-web { text-decoration: none; border-bottom: 2px solid #DC3545;}
+
+.mm-web { text-decoration: none; border-bottom: 2px solid #f8d047; }
+
+.nn-web { text-decoration: none; border-bottom: 2px solid #5F65FF; }
+
+.ew-web { text-decoration: none; border-bottom: 2px solid #83C6B8; }
+
